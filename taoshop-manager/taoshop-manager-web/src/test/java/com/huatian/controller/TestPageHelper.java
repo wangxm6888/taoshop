@@ -30,7 +30,6 @@ public class TestPageHelper {
 		{
 			System.out.println(tbItem.getTitle());
 			
-			System.out.println();
 		}
 		//获取分页信息
 		PageInfo<TbItem> pageInfo = new PageInfo<>(list);

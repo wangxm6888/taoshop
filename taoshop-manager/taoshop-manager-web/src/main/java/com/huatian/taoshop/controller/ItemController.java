@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.huatian.common.pojo.EUDataGridResult;
 import com.huatian.taoshop.pojo.TbItem;
 import com.huatian.taoshop.service.ItemService;
 
@@ -20,6 +21,13 @@ public class ItemController {
 	{
 		TbItem tbItem = itemService.getItemById(itemId);
 		return tbItem;
+	}
+	
+	@RequestMapping("/item/list")
+	@ResponseBody
+	public EUDataGridResult getItemList(Integer page,Integer rows)
+	{
+		return itemService.getItemList(page, rows);
 	}
 
 }
