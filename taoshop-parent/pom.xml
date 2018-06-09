@@ -61,6 +61,7 @@
 				<artifactId>jackson-databind</artifactId>
 				<version>${jackson.version}</version>
 			</dependency>
+			
 			<!-- httpclient -->
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
